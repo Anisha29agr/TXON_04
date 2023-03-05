@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css">
+</head>
+<body>
+
+<!-- home section starts -->
+    <div id="header">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <i class="fas fa-bars"></i>
+        </nav>
+
+        <div class="detail">
+            <p>Web Developer</p>
+            <h1>I'm  Anisha <br><span>Medpalliwar</span></h1>
+            <p>This is my official Portfolio website to showcase all
+                <br>my work experience.
+            </p>
+            <a href="#"><span>DOWNLOAD CV</span> </a>
+        </div>
+        <div class="images">
+            <img src="self.jpg" class="shape">
+            
+        </div>
+    </div>
+<!-- home section ends -->
+
+
+<!-- about section starts -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- my img-->
+                    <img src="self.jpg" width="150px" height="250px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate programmer, with good interpersonal, leadership skills, creativity, good communication skills and adaptive skills. I am currently pursuing Bachelors in Information Technology at G. H. Raisoni College of Engineering in Nagpur.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">EDUCATION</p>
+                        <p class="tab-links" onclick="opentab('skills')">SKILLS</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>	St. Anne's High School, Mul &nbsp;</span>96.80%<br>SSC</li> <br><br>
+                            <li><span>	Navbharat Jr. Science College, Mul &nbsp;</span>   84.92%<br>HSC</li> <br><br>
+                            <li><span> G H Raisoni College of Engineering, Nagpur</span><br>B.tech, IT</li> <br><br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>C Language</span></li> <br>
+                            <li><span>C++ Language</span></li> <br>
+                            <li><span>Java Language</span></li> <br>
+                            <li><span>Python Language</span></li> <br>
+                            <li><span>Frontend Development</span></li> <br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- about section ends -->
+
+
+<!-- service section starts -->   
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titles">My Work</h1>
+            <div class="work-list">
+
+                <div class="work1">
+                    <img src="project1.png" width="100" height="100">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>CALCULATOR</p><a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work2">
+                    <img src="project2.png" width="100" height="100">
+                    <div class="layer">
+                        <h3>To-Do-List</h3>
+                        <p>TO-DO-LIST</p><a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work3">
+                    <img src="project3.png" width="100" height="100">
+                    <div class="layer">
+                        <h3>Landing Page</h3>
+                        <p>LANDING PAGE</p><a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- service section ends --> 
+
+
+<!-- contact section starts --> 
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>   anisha10agr@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>   +91 0101010101</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+            
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="First name"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Last name"><br>
+                        <label for="email">E-mail:</label><br>
+                        <input type="text" id="email" name="email" placeholder="Your mail Id"><br>
+                        <label for="text">Feedback:</label><br>
+                        <textarea name="msg" cols="10" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn1">SUBMIT</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-sharp fa-solid fa-copyright"></i> Made By Anisha</p>
+        </div>
+    </div>
+<!-- contact section ends --> 
+
+
+</body>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</html>
